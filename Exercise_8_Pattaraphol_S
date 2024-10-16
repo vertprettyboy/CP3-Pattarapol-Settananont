@@ -1,0 +1,38 @@
+username = input("Enter Username : ")
+password = input("Enter Password : ")
+
+if username == "jay" and password == "1234":
+    print("Welcome Sir")
+    print("----- Apple Store-----")
+    print("1. Iphone")
+
+    select = int(input("Choose to buy : "))
+    if select != 1:
+        print("ERROR")
+        exit()
+    if select == 1:
+        print("1. 16 pro max = 49900")
+        print("2. 16 pro = 45900")
+        print("3. 16 = 29900")
+        iphone = int(input("Choose Version : "))
+        if iphone == 1:
+            iphone_m = "16 pro max"
+            price = 49900
+            print("16 pro max")
+        elif iphone == 2:
+            iphone_m = "16 pro"
+            price = 45900
+            print("16 pro")
+        elif iphone == 3:
+            iphone_m = "16"
+            price = 29900
+            print("16")
+        else:
+            print("Invalid iPhone version selected.")
+            exit()
+
+        howmany = int(input("How Many Phones : "))
+        print(f"{iphone_m} x{howmany} Price = {price * howmany} THB")
+
+else:
+    print("Incorrect username or password")
