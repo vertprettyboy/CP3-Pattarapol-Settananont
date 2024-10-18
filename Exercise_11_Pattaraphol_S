@@ -1,0 +1,6 @@
+pyramid = int(input())
+for i in range(pyramid):
+    space = " " * (pyramid - i - 1)
+    stars = "*" * (2 * i + 1)
+    print(space+stars)
+
